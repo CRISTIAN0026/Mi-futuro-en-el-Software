@@ -140,7 +140,7 @@
     animation: fillBar 1.8s cubic-bezier(0.4,0,0.2,1) 0.4s forwards, shimmer 3s linear infinite;
     box-shadow: 0 0 20px rgba(255,153,0,0.4);
   }
-  @keyframes fillBar { to { width: 0%; } }
+  @keyframes fillBar { to { width: 16.67%; } }
   @keyframes shimmer { to { background-position: -200% 0; } }
   .progress-pct { font-family: 'Space Mono', monospace; font-size: 14px; color: #FFB84D; font-weight: 700; white-space: nowrap; }
 
@@ -400,7 +400,7 @@
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-labelledby="progress-label-text">
       <div class="progress-fill"></div>
     </div>
-    <span class="progress-pct">0 / 6 certs</span>
+    <span class="progress-pct">1 / 6 certs</span>
   </div>
 
   <!-- FASE 1 -->
@@ -451,18 +451,18 @@
 
   <div class="connector" aria-hidden="true"></div>
 
-  <!-- CARD 2: AI Practitioner (EN CURSO) -->
-  <div class="card" style="--accent:#f59e0b; --glow:rgba(245,158,11,0.5)" onclick="toggle(this)" onkeydown="handleKey(event, this)" tabindex="0" role="button" aria-expanded="false" aria-controls="details-2">
+  <!-- CARD 2: AI Practitioner (COMPLETADO) -->
+  <div class="card" style="--accent:#10b981; --glow:rgba(16,185,129,0.5)" onclick="toggle(this)" onkeydown="handleKey(event, this)" tabindex="0" role="button" aria-expanded="false" aria-controls="details-2">
     <div class="badge-frame">
       <img src="https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/certification/approved/images/certification-badges/aif-badge-resized.b983c6550d9bcb2984a63acc083e12f9fb846e71.png"
            alt="Badge AWS Certified AI Practitioner" loading="lazy">
-      <span class="status-icon progress" title="En curso">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1200" stroke-width="3" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-9-9"/></svg>
+      <span class="status-icon completed" title="Completado">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#08150f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
       </span>
     </div>
     <div class="card-meta">
       <div class="card-top">
-        <span class="card-tag current"><span class="pulse-dot" aria-hidden="true"></span> En curso</span>
+        <span class="card-tag done">✓ Completado</span>
         <span class="card-tag">Foundational</span>
       </div>
       <div class="card-title">AWS Certified AI Practitioner</div>
@@ -480,13 +480,17 @@
         <div class="detail-item"><div class="detail-key">Nivel</div><div class="detail-val">Foundational</div></div>
         <div class="detail-item"><div class="detail-key">Duración</div><div class="detail-val">120 min</div></div>
         <div class="detail-item"><div class="detail-key">Precio</div><div class="detail-val">USD $100</div></div>
-        <div class="detail-item"><div class="detail-key">Estado</div><div class="detail-val" style="color:#fbbf24">🟡 En curso</div></div>
+        <div class="detail-item"><div class="detail-key">Estado</div><div class="detail-val" style="color:#34d399">🟢 Completado</div></div>
       </div>
       <p class="detail-desc">Valida el conocimiento fundamental de conceptos de IA/ML, servicios AWS AI (Bedrock, Rekognition, Comprehend) e IA generativa. Es tu punto de partida perfecto para IA en AWS.</p>
       <div class="topics-list">
         <span class="topic-chip">Amazon Bedrock</span><span class="topic-chip">GenAI</span><span class="topic-chip">ML Concepts</span><span class="topic-chip">Rekognition</span><span class="topic-chip">Comprehend</span>
       </div>
-      <a href="https://aws.amazon.com/certification/certified-ai-practitioner/" target="_blank" rel="noopener noreferrer" class="card-cta" onclick="event.stopPropagation()">
+      <a href="https://www.credly.com/badges/3721c229-494b-495b-9400-efa234c613ef/linked_in?t=ti4t6o" target="_blank" rel="noopener noreferrer" class="card-cta" onclick="event.stopPropagation()">
+        Ver credencial
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a href="https://aws.amazon.com/certification/certified-ai-practitioner/" target="_blank" rel="noopener noreferrer" class="card-cta" onclick="event.stopPropagation()" style="margin-top:10px; background:transparent; border:1px solid var(--border-light); color:var(--text-dim)">
         Ver guía oficial
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
       </a>
