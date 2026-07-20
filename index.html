@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AWS AI Certification Roadmap</title>
+<title>AWS Machine Learning Engineer - Roadmap</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -120,6 +120,15 @@
     text-transform: uppercase; letter-spacing: 0.08em;
     margin-top: 2px;
   }
+  .role-card {
+    max-width: 640px; margin: 0 auto 28px; text-align: left;
+    background: linear-gradient(135deg, rgba(255,153,0,0.08), rgba(255,153,0,0.02));
+    border: 1px solid rgba(255,153,0,0.2); border-radius: 16px;
+    padding: 18px 22px; display: flex; gap: 14px; align-items: flex-start;
+  }
+  .role-card svg { width: 22px; height: 22px; color: var(--aws-orange); flex-shrink: 0; margin-top: 2px; }
+  .role-card-title { font-size: 13px; font-weight: 700; color: #FFB84D; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .role-card-desc { font-size: 13.5px; color: var(--text-dim); line-height: 1.65; }
 
   /* ---------- Progress ---------- */
   .progress-wrap {
@@ -384,13 +393,20 @@
       </svg>
       Tu ruta de certificación
     </div>
-    <h1>AWS AI Certification<br>Roadmap</h1>
-    <p class="subtitle">Tu camino para especializarte en Inteligencia Artificial con AWS, desde fundamentos hasta experto. Haz clic en cada certificación para ver los detalles.</p>
+    <h1>AWS Machine Learning<br>Engineer Roadmap</h1>
+    <p class="subtitle">Tu camino para especializarte en Machine Learning con AWS, desde fundamentos hasta experto. Haz clic en cada certificación para ver los detalles.</p>
+    <div class="role-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-1.17 2.83M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0 1.17 2.83M12 2v6M8 9.83A4 4 0 0 0 5.5 13.5V15a4 4 0 0 0 4 4M16 9.83a4 4 0 0 1 2.5 3.67V15a4 4 0 0 1-4 4m-4.5 0h4.5"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="14.5" cy="19" r="1.5"/></svg>
+      <div>
+        <div class="role-card-title">Rol objetivo · Machine Learning Engineer</div>
+        <p class="role-card-desc">Investiga, construye y diseña sistemas de inteligencia artificial (IA) para automatizar modelos predictivos, y diseña sistemas, modelos y esquemas de machine learning.</p>
+      </div>
+    </div>
     <div class="quick-stats">
       <div class="quick-stat"><span class="quick-stat-num">6</span><span class="quick-stat-label">Certificaciones</span></div>
       <div class="quick-stat"><span class="quick-stat-num">3</span><span class="quick-stat-label">Fases</span></div>
       <div class="quick-stat"><span class="quick-stat-num">~14</span><span class="quick-stat-label">Meses est.</span></div>
-      <div class="quick-stat"><span class="quick-stat-num">$1,100</span><span class="quick-stat-label">Inversión USD</span></div>
+      <div class="quick-stat"><span class="quick-stat-num">$950</span><span class="quick-stat-label">Inversión USD</span></div>
     </div>
   </header>
 
@@ -586,53 +602,54 @@
     </div>
   </div>
 
-  <!-- FASE 3 -->
-  <div class="phase-label">
-    <div class="phase-dot" style="background:#a855f7; color:#a855f7"></div>
-    <span class="phase-text">Fase 3 · Professional</span>
-    <div class="phase-line"></div>
-  </div>
+  <div class="connector" aria-hidden="true"></div>
 
-  <!-- CARD 5: Solutions Architect Professional -->
-  <div class="card" style="--accent:#f59e0b; --glow:rgba(245,158,11,0.5)" onclick="toggle(this)" onkeydown="handleKey(event, this)" tabindex="0" role="button" aria-expanded="false" aria-controls="details-5">
+  <!-- CARD 5: Data Engineer Associate -->
+  <div class="card" style="--accent:#3b82f6; --glow:rgba(59,130,246,0.5)" onclick="toggle(this)" onkeydown="handleKey(event, this)" tabindex="0" role="button" aria-expanded="false" aria-controls="details-5">
     <div class="badge-frame">
-      <img src="aws-certified-solutions-architect-professional.svg"
-           alt="Badge AWS Certified Solutions Architect Professional" loading="lazy">
+      <img src="aws-certified-data-engineer-associate.svg"
+           alt="Badge AWS Certified Data Engineer Associate" loading="lazy">
     </div>
     <div class="card-meta">
       <div class="card-top">
         <span class="card-tag todo">Pendiente</span>
-        <span class="card-tag" style="background:rgba(245,158,11,0.12);color:#fbbf24;border-color:rgba(245,158,11,0.25)">Professional</span>
+        <span class="card-tag" style="background:rgba(59,130,246,0.12);color:#60a5fa;border-color:rgba(59,130,246,0.25)">Associate</span>
+        <span class="card-tag">📊 Datos para ML</span>
       </div>
-      <div class="card-title">AWS Certified Solutions Architect – Professional</div>
-      <div class="card-code">SAP-C02</div>
-      <p class="card-summary">Diseño de soluciones complejas multi-cuenta, migración, optimización de costos y arquitecturas empresariales.</p>
+      <div class="card-title">AWS Certified Data Engineer – Associate</div>
+      <div class="card-code">DEA-C01</div>
+      <p class="card-summary">Ingesta, transformación y orquestación de datos: la base de datos limpios y confiables que alimentan tus modelos de ML.</p>
       <div class="card-quickfacts">
-        <span class="quickfact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>180 min</span>
-        <span class="quickfact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>USD $300</span>
+        <span class="quickfact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>170 min</span>
+        <span class="quickfact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>USD $150</span>
       </div>
     </div>
     <div class="card-chevron" aria-hidden="true">⌄</div>
     <div class="card-details" id="details-5">
       <div class="card-divider"></div>
       <div class="detail-grid">
-        <div class="detail-item"><div class="detail-key">Nivel</div><div class="detail-val">Professional</div></div>
-        <div class="detail-item"><div class="detail-key">Duración</div><div class="detail-val">180 min</div></div>
-        <div class="detail-item"><div class="detail-key">Precio</div><div class="detail-val">USD $300</div></div>
-        <div class="detail-item"><div class="detail-key">Prereqs</div><div class="detail-val">SAA-C03 requerida</div></div>
+        <div class="detail-item"><div class="detail-key">Nivel</div><div class="detail-val">Associate</div></div>
+        <div class="detail-item"><div class="detail-key">Duración</div><div class="detail-val">170 min</div></div>
+        <div class="detail-item"><div class="detail-key">Precio</div><div class="detail-val">USD $150</div></div>
+        <div class="detail-item"><div class="detail-key">Prereqs</div><div class="detail-val">MLA-C01 recomendado</div></div>
       </div>
-      <p class="detail-desc">Para roles de arquitecto y liderazgo técnico. Diseño de soluciones complejas multi-cuenta, migración, optimización de costos y arquitecturas empresariales en AWS.</p>
+      <p class="detail-desc">Certifica habilidades para diseñar y mantener pipelines de datos seguros y eficientes. Cubre ingesta y transformación de datos, orquestación, modelado de datos, almacenamiento y gobernanza — clave para que un ML Engineer alimente modelos con datos de calidad.</p>
       <div class="topics-list">
-        <span class="topic-chip">Multi-account</span><span class="topic-chip">Organizations</span><span class="topic-chip">Migración</span><span class="topic-chip">Cost Optimization</span><span class="topic-chip">Disaster Recovery</span>
+        <span class="topic-chip">AWS Glue</span><span class="topic-chip">Amazon Redshift</span><span class="topic-chip">Kinesis</span><span class="topic-chip">Lake Formation</span><span class="topic-chip">Athena</span><span class="topic-chip">S3</span>
       </div>
-      <a href="https://aws.amazon.com/certification/certified-solutions-architect-professional/" target="_blank" rel="noopener noreferrer" class="card-cta" onclick="event.stopPropagation()">
+      <a href="https://aws.amazon.com/certification/certified-data-engineer-associate/" target="_blank" rel="noopener noreferrer" class="card-cta" onclick="event.stopPropagation()">
         Ver guía oficial
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
       </a>
     </div>
   </div>
 
-  <div class="connector" aria-hidden="true"></div>
+  <!-- FASE 3 -->
+  <div class="phase-label">
+    <div class="phase-dot" style="background:#a855f7; color:#a855f7"></div>
+    <span class="phase-text">Fase 3 · Professional</span>
+    <div class="phase-line"></div>
+  </div>
 
   <!-- CARD 6: GenAI Developer Professional -->
   <div class="card" style="--accent:#a855f7; --glow:rgba(168,85,247,0.5)" onclick="toggle(this)" onkeydown="handleKey(event, this)" tabindex="0" role="button" aria-expanded="false" aria-controls="details-6">
